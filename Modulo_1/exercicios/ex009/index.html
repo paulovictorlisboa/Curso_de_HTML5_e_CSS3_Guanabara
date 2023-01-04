@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon_inoventer.ico" type="image/x-icon">
+    
+    <title>Listas</title>
+</head>
+<body>
+    <h1>Trabalhando com Listas</h1>
+    <h2>Listas Ordenadas</h2> <!-- A tag OL significa uma lista ordenada, onde a orde dos intens tem importância. Já a tag LI representa os intens da lista-->
+    <ol type="1"> <!--Se não usar o parâmetro TYPE ele vem como padrão os marcadores numéricos (1.,2.,3.,4. etc), ainda tem A (letra maiúscula), a (letra minúscula), I (álgarismos romanos maiúsculos) e i (algarismos romanos minúsculos)-->
+        <p><h3>Manhã</h3></p>
+        <li>Acordar</li>
+        <li>Ligar para o João</li>
+        <li>Tomar café</li>
+        <li>Escovar os dentes</li>
+        <li>Ir para a Faculdade</li>
+        <li>Almoçar</li> 
+    </ol>      
+    <ol start="7">
+        <p><h3>Tarde</h3></p>
+        <li>Ir para o trabalho</li>
+        <li>Voltar para casa</li>
+    </ol>
+    <ol start="9">
+        <p><h3>Noite</h3></p>
+        <li>Jantar</li>
+        <li>Dormir</li>
+    </ol>           
+    
+    <h2>Listas não Ordenadas</h2>
+    <ul type="circle"><!--Se não usar o type ele vem como padrão os marcadores em disc(bolinhas fechada), mas ainda pode ser: circle (bolinha aberta), square (quadrado)-->        
+        <li>Pão</li>
+        <li>Leite</li>
+        <li>Tomate</li>
+        <li>Alface</li>
+        <li>Manteiga</li>
+        <li>Arroz</li>
+        <li>Feijão</li>
+    </ul>
+    <ul type="square">
+        <li>Item 1
+        <li>Item 2
+        <li>Item 3
+        <li>Item 4
+        <li>Item 5
+        <!--A tag <li> tem fechamento opcional-->
+    </ul>
+    <h2>Misturando as Coisas</h2>
+    <ol>
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <ol type="a">
+            <li>Item 2.1</li>
+            <li>Item 2.2</li>
+            <li>Item 2.3</li>
+        </ol>
+        <li>Item 4</li>
+        <li>Item 5</li>
+        <li>Item 6</li>
+        <ol type="a">
+            <li>Item 6.1</li>
+            <ul type="disc">
+                <li>Item 6.1.1
+                <li>Item 6.1.2</li>
+                </li>
+            </ul>
+            <li>Item 6.2</li>
+            <li>Item 6.3</li>
+        </ol>
+    </ol>
+
+    <h2>Minhas linguagens favoritas</h2>
+    <ol>
+        <li>Antigas</li>
+        <ol type="a">
+            <li>Clipper</li>
+            <li>Visual Basic</li>
+            <li>Fortran</li>
+            <li>Delphi</li>
+        </ol>
+        <li>Novas</li>
+        <ol type="a" start="5"> <!--O start é um parâmetro alfa-nmérico então, nesse caso, é inciará a partir da letra que está contida na quinta posição (a letra "e")-->
+            <li>PHP</li>
+            <li>Python</li>
+            <li>JavaScript</li>
+            <li>Kotlin</li>
+        </ol>
+    </ol>
+    <h2>Meus jogos favoritos</h2>
+    <ol>
+        <li>Nintendo</li>
+        <ul type="square">
+            <li>Mário Bros</li>
+            <ul type="circle">
+                <li>Mário Bros 3</li>
+                <li>Mário: Lost Levels</li>
+            </ul>
+            <li>Ninja Gaiden</li>
+        </ul>
+        <li>Super Nintendo</li>
+        <ul type="square">
+            <li>Mário</li>
+            <li>Donkey Kong</li>
+        </ul>
+        <li>PlayStation</li>
+        <ul type="square">
+            <li>Final Fantasy</li>
+            <li>Castlevania</li>
+        </ul> <!--Para selecionar e mudar varias coisas iguais ao mesmo tempo, basta clicar na tag segurando o ALT e mudar como desejar-->
+    </ol>
+    <h2>Lista de Definições</h2>
+    <dl>
+        <dt>HTML <!--DT = Definition Term-->
+        <dd>Linguagem de marcação para aa criação do conteúdo de um site. <!--DD = Definition Description (Essa tag tem fechamento opcional)-->
+        <!--As duas tags <dt> e a <dd> tem fechamento opcional-->
+        <dt>CSS</dt>
+        <dd>Linguagem de Marcação para a criação do design de um site</dd>
+        <dt>JavaScript</dt>
+        <dd>Linguagem de programação para a criação de interatividade de um site</dd>
+    </dl>
+</body>
+</html>

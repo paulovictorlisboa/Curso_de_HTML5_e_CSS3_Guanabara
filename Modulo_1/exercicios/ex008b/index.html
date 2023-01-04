@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon_inoventer.ico" type="image/x-icon">
+    <title>Outras formatacões</title>
+</head>
+<body>
+    <h1>Outras formatacões</h1>
+    <h2>Código-fonte / Pré-formatação</h2>
+    <p>O comando <code>documet.getElementById('teste')</code> é escrito em linguagem JavaScript.</p> <!--Fonte mono-espaçada-->
+    <pre>
+        <code>
+    num=int(input('Digite um número:'))
+    if num % 2 == 0:
+        print(f'0 número {num} é PAR)
+    else:
+        print(f'0 número {num} é IMPAR)
+    print('Fim do programa')
+        </code>
+    </pre> <!-- A Tag pre mantem a indentação do código original no arquivo final-->
+    <!--SHIFT + TAB recua todas a linhas selecionadas mantendo as indentações. e apertando apenas TAB avança as linhas selecionadas mantendo a indentação-->
+    <h2>Citações simples</h2>
+    <p>Como diria o pai de um amigo: <q>o computador é um burro muito rápido</q></p>
+    <!-- Se tratatando de citação se indica o uso da tag q (quote) ao invés de apenas colocar a citação entre áspas-->
+    <h2>Citações completas</h2>
+    <p>Segundo Maurício Samy Silva, no seu livro Fundamentos de HTML5 e CSS3:</p>
+    <Blockquote cite="https://www.google.com.br/books/edition/Fundamentos_de_HTML5_e_CSS3/2iPYCQAAQBAJ?hl=pt-BR&gbpv=1&dq=html&printsec=frontcover">
+        <q>Como qualquer idioma, a HTML também tem suas regras de sintaxe e escrita, e um arquivo de texto escrito em conformidade com essas regras consiste-se na chamada marcação HTML ou estrutura HTML.</q>
+    </Blockquote>
+    <h2>Abreviações</h2>
+    <p>Estou estudando <abbr title="HyperText Makup Language">HTML</abbr> e <abbr title="Cascading Style Sheets">CSS</abbr>. Estou adorando!</p> <!-- A tag abbr possibilita insedir o significado de um termo abreviado-->
+    <h2><bdo dir="ltl">Texto invertido</bdo> </h2>
+    <p><bdo dir="rtl">Estou aprendendo a criar coisas em HTML.</bdo></p> <!-- rtl: right to left (invertido) / ltr: left to right (normal)-->
+    <p><bdo dir="rtl">Este texto todo está invertido no formato RIGHT-TO-LEFT</bdo></p>
+</body>
+</html>

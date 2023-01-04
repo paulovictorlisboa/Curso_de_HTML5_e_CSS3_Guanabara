@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../../../imagens/favicon/favicon_inoventer.ico" type="image/x-icon">
+    <title>Fontes em CSS</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?fam');
+        body {
+            font-family: 'Work Sans', Arial, Helvetica, sans-serif; 
+            /* 
+            Palavra dupla sempre entre aspas simples ou dupla 
+            */
+
+            /* 
+            - Medidas absolutas:  
+            cm, mm, in, px, pt, pc (W3C recomenda usar px)            
+            
+            - Medidas Relativas 
+            em, ex, rem, vw, vh, % (W3C recomenda usar em) 
+            */
+            
+            font-size: 1em; 
+            /* 
+            Normalmente 16px é o tamanho normal da fonte
+            16px geralmente = 1em
+            */
+            font-weight: normal; /* OBS: weight, width  height */
+            /* lighter, normal, bold, bolder*/
+            /* 100 - 900 expessura da letra (400 - normal) */
+            font-style: italic; /* Italico, normal */
+            text-decoration: underline; /* Sublinhado */
+        }
+
+        h1 {
+
+             /* Shorthand font 
+            - font-style -> font-weight -> font-size -> font-family */
+
+            font: italic bolder 3em 'Work Sans', sans-serif
+        } 
+        
+        h2 {
+            font: bold 2em 'Work Sans'
+        }        
+    </style>
+</head>
+<body>
+    <h1>Trabalhando com fontes</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam laudantium, maxime nam tempora iste perferendis expedita sed quis fugiat tempore commodi distinctio eligendi soluta maiores tenetur corrupti optio incidunt minus! Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium sit possimus repellendus officiis dolorum. Sit doloribus culpa, eum, consectetur quos beatae quod vero tenetur, tempore adipisci voluptates est eaque saepe?</p>
+    <h2>Subtítulo do exercício</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos tenetur voluptatum, sequi ea culpa similique. Animi eligendi at excepturi beatae aperiam suscipit odit aliquid? Atque quia sit velit odit rem.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam doloremque maiores optio odio ullam, eius quam voluptatem, totam autem quae enim, reprehenderit tempora aut explicabo officia magni nostrum assumenda modi!</p>
+</body>
+</html>

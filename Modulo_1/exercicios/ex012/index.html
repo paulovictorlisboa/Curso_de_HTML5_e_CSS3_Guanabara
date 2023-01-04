@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../favicon/favicon_inoventer.ico" type="image/x-icon">
+    <title>Vídeo com HTML5</title>
+</head>
+<body>
+    <h1>Inserindo vídeos hospedados localmente</h1>
+    <p>Este vídeo está hospedado no meu próprio servidor.</p>
+    <h2>Vídeo em MP4</h2>
+    <video src="midia/meu-video.mp4.mp4" width="500" controls></video>
+    <h2>Vídeo em M4V</h2>
+    <video src="midia/meu-video.m4v.m4v" width="500" controls></video>
+    <h2>Vídeo em OGV</h2>
+    <video src="midia/meu-video.ogv.ogv" width="500" controls></video>
+    <h2>Vídeo em WEBM</h2>
+    <video src="midia/meu-video.webm.webm" width="500" controls></video>
+    
+    <h1>Colocando todas as opções usando o source</h1>
+    <p>Se recomenda utilizar todas as extenções acima citadas (MP4, M4V, OGV,WEBM), pois dependendo do navegador o vídeo pode nao reproduzir alguma das extensões.</p>
+    <video width="500" poster="imagens/limoes-capa.png" controls autoplay loop> <!--Ordenar do menor tamanho para o maior-->
+        <source src="midia/meu-video.mp4.mp4" type="video/mp4">
+        <source src="midia/meu-video.m4v.m4v" type="video/m4v">
+        <source src="midia/meu-video.webm.webm" type="video/webm">
+        <source src="midia/meu-video.ogv.ogv" type="video/ogv">
+        <p>Seu navegador não tem compatibilide com reprodução de vídeos.</p> <!--Caso nenhuma das extensões abra no navegador, essa mensagem aparecerá no local do vídeo-->
+    </video>
+    <p>Caso o seu navegador não reproduza o vídeo, <a href="midia/meu-video.mp4.mp4">clique aqui para fazer o download</a> do vídeo</p>
+
+    <h1>Inserindo vídeos do YuoTube</h1>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/9rZKhGrQ1wo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    
+    <h1>Inserindo vídeos do Vimeo</h1>
+    <iframe src="https://player.vimeo.com/video/197093965?color=ff9933&portrait=0" width="560" height="315" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+</body>
+</html>

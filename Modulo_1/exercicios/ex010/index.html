@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon_inoventer.ico" type="image/x-icon">
+    <title>Trabalhando com links</title>
+</head>
+<body>
+    <h1>Usando links:</h1>
+    <h2>Externos</h2>
+    <p>Você pode acessar o meu <a href="https://gustavoguanabara.github.io/" target="_blank" rel="external">repositório público no GitHub</a></p> <!--O link externo (site que não é seu) será aberto numa nova janela em branco, para isso se usa as tags target e rel-->
+    <!--Para criar um hyperlink, devemos criar âncoras através da tag <a>. O principal atributo dessa tag é o href, que cria uma referência hipertexto-->
+    <p>Você também pode acessar o meu <a href="https://youtube.com/cursoemvideo/" target="_blank" rel="external">canal gratuito no YouTube</a></p>
+    <p>Podemos assim acessar o site da <a href="https://inoventerfurg.wixsite.com/inoventer" target="_blank" rel="external">INOV[ENTER]</a></p>
+    <!--Outro atributo útil da tag âncora (<a>), é o hreflang, que permite indicar qual é o idioma principal do site para onde o link está desviando o fluxo de navegação -->
+    <p>Visitando o site da <a href="https://www.w3schools.com/html/" hreflang="en" target="_self" rel="external">W3S</a></p> <!--Site em Inglês-->
+    <h2>Internos</h2>
+    <p>Esta é a primeira página do site. Se você quiser, pode acessar também a minha <a href="pag002.html" rel="next" target="_self">segunda página</a></p> <!--target="_self" siginifica que vai abrir o novo site na atual janela e rel="next" significa que da página principal pode seguir para outras páginas-->
+    <p>Você também pode acessar a nossa <a href="noticias/pag003.html" rel="next" target="_self">página de notícias</a></p>
+    <h1>Links para downloads</h1>
+    <ul>
+        <li><a href="livro/meulivro.pdf" download="meulivro.pdf" type="application/pdf">Baixar o livro em PDF</a></li> <!-- site com os media types: iana.org/assignments/media-types/media-types.xhtml-->
+        <li><a href="livro/meulivro.rar" download="meulivro.zip" type="application/rar">Livro compactado em RAR</a></li>
+    </ul>
+    
+</body>
+</html>
